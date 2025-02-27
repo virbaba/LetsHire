@@ -37,7 +37,6 @@ const GoogleLogin = ({ text, role, route }) => {
           if (userRole.includes("student")) navigate("/");
           else if (userRole.includes("recruiter"))
             navigate("/recruiter/dashboard/home");
-          else if (userRole.includes("admin")) navigate("/admin/dashboard");
         } else {
           toast.success(response.data.message);
         }
