@@ -68,7 +68,7 @@ const Sidebar = () => {
           {isOpen ? <FaTimes /> : <FaBars />}
         </button>
         <div className="p-4 text-2xl font-bold border-b border-gray-300 hidden md:flex items-center justify-center">
-          <span>Great</span>
+          <span>Lets</span>
           <span className="text-blue-700">Hire</span>
         </div>
       </div>
