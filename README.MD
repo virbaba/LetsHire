@@ -1,4 +1,4 @@
-# GreatHire
+# LetsHire
 
 ## Project Setup
 
