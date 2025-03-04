@@ -517,7 +517,7 @@ export const forgotPassword = async (req, res) => {
     });
 
     // Generate reset URL
-    const resetURL = `http://localhost:5173/reset-password/${resetToken}`;
+    const resetURL = `letshire-6azz.onrender.com/reset-password/${resetToken}`;
 
     // Setup nodemailer
     const transporter = nodemailer.createTransport({
