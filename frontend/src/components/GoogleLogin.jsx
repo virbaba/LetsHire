@@ -6,6 +6,7 @@ import { useNavigate } from "react-router-dom";
 import { toast } from "react-hot-toast";
 import { setUser } from "@/redux/authSlice";
 import { useDispatch } from "react-redux";
+import { BACKEND_URL } from "@/utils/ApiEndPoint";
 
 const GoogleLogin = ({ text, role, route }) => {
   const navigate = useNavigate();
@@ -17,7 +18,7 @@ const GoogleLogin = ({ text, role, route }) => {
       if (authResult.code) {
         // Send the authorization code to your backend
         const response = await axios.post(
-          `http://localhost:8000/api/v1/${route}/googleLogin`,
+          `${BACKEND_URL}/api/v1/${route}/googleLogin`,
           {
             code: authResult.code,
             role: role,
