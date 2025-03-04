@@ -23,18 +23,10 @@ const candidateSubscriptionSchema = new mongoose.Schema(
       type: Date,
       required: true,
       default: function () {
-        return new Date(Date.now() + 5 * 60 * 1000); // Current time + 10 minutes
+        // Automatically set to one month after purchase
+        return new Date(new Date().setMonth(new Date().getMonth() + 1));
       },
     },
-
-    // expiryDate: {
-    //   type: Date,
-    //   required: true,
-    //   default: function () {
-    //     // Automatically set to one month after purchase
-    //     return new Date(new Date().setMonth(new Date().getMonth() + 1));
-    //   },
-    // },
     price: {
       type: Number,
       required: true,
