@@ -87,7 +87,7 @@ const ResetPassword = () => {
             </div>
 
             {/* Right Side - Form */}
-            <div className="w-full px-8 md:w-1/3  flex flex-col space-y-4">
+            <div className="w-full px-8 md:w-1/3  flex flex-col space-y-4 h-screen justify-center">
               <h1 className="text-3xl font-bold text-center">
                 Lets<span className="text-blue-700">Hire</span>
               </h1>
