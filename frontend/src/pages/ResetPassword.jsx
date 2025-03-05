@@ -78,7 +78,7 @@ const ResetPassword = () => {
         <>
           <div className="flex flex-row md:flex-row-reverse  bg-gradient-to-tl from-white to-blue-100 items-center justify-evenly">
             {/* Left Side - Image */}
-            <div className="w-full md:w-1/2 h-screen p-10">
+            <div className="hidden md:block w-full md:w-1/2 h-screen p-10">
               <img
                 src={img5}
                 alt=""
