@@ -76,7 +76,7 @@ const ResetPassword = () => {
       {status === "page not found" && <PageNotFound />}
       {status === "valid token" && (
         <>
-          <div className="flex flex-row md:flex-row-reverse  bg-gradient-to-tl from-white to-blue-100 items-center justify-evenly">
+          <div className="flex flex-row md:flex-row-reverse  bg-gradient-to-tl from-white to-blue-100 items-center justify-evenly h-screen">
             {/* Left Side - Image */}
             <div className="hidden md:block w-full md:w-1/2 h-screen p-10">
               <img
@@ -87,7 +87,7 @@ const ResetPassword = () => {
             </div>
 
             {/* Right Side - Form */}
-            <div className="w-full px-8 md:w-1/3  flex flex-col space-y-4 h-screen justify-center">
+            <div className="w-full px-8 md:w-1/3  flex flex-col space-y-4">
               <h1 className="text-3xl font-bold text-center">
                 Lets<span className="text-blue-700">Hire</span>
               </h1>
