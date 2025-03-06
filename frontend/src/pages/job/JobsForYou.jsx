@@ -233,7 +233,7 @@ const JobsForYou = () => {
                 className={`py-2 px-5 rounded-lg text-white ${
                   isApplied
                     ? "bg-green-600 hover:bg-green-700 "
-                    : "bg-blue-600 hover:bg-blue-700"
+                    : "bg-blue-700 hover:bg-blue-600"
                 }`}
               >
                 {isApplied ? (

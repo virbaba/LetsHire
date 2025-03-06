@@ -1,6 +1,7 @@
 export const BACKEND_URL = import.meta.env.VITE_BACKEND_URL;
 
 export const USER_API_END_POINT = `${BACKEND_URL}/api/v1/user`;
+export const FAQ_API_END_POINT = `${BACKEND_URL}/api/v1/faq`;
 export const RECRUITER_API_END_POINT = `${BACKEND_URL}/api/v1/recruiter`;
 export const ADMIN_API_END_POINT = `${BACKEND_URL}/api/v1/admin`;
 export const ADMIN_STAT_API_END_POINT = `${BACKEND_URL}/api/v1/admin/stat`;

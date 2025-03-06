@@ -3,15 +3,28 @@ export const getAnswer = async (req, res) => {
 
   // Predefined Q&A
   const faqs = {
-    "How to create a company?":
-      "1. First create Recruiter Account.\n2. Create Company by Create New Options and your company will verify by LetsHire soon.",
-    "How to post a job?":
-      '1. First create Recruiter Account.\n2.Create Company by Create New Options and your company will verify by LetsHire.\n3.After verification go to Create New option and "Post Job". You and your team can post 5 free jobs',
-    "How to apply for a job?":
-      "Search for a job, click 'Apply Now', and submit your resume.",
+    "how to create a company?": [
+      "1. First, create a Recruiter Account.",
+      "2. Create a Company using 'Create New'.",
+      "3. Your company will be verified by LetsHire soon.",
+    ],
+
+    "how to post a job?": [
+      "1. First, create a Recruiter Account.",
+      "2. Create a Company using 'Create New'.",
+      "3. Your company will be verified by LetsHire.",
+      "4. After verification, go to 'Create New' and select 'Post Job'.",
+      "5. Fill the job posting form and post the job",
+    ],
+
+    "how to apply for a job?": [
+      "1. Search for a job.",
+      "2. Click 'Apply Now'.",
+      "3. Submit your resume.",
+    ],
   };
 
   const answer =
     faqs[question.toLowerCase()] || "Sorry, I don't have an answer for that.";
-  res.json({ success: true, answer });
+  return res.status(200).json({ success: true, answer });
 };
