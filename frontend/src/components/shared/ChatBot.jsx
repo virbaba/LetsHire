@@ -116,10 +116,10 @@ const ChatBot = () => {
         </div>
       ) : (
         <div
-          className="fixed bottom-6 right-6 bg-white shadow-lg p-4 rounded-full h-14 w-14 flex justify-center items-center cursor-pointer border-t-[1px] border-b-[1px] border-blue-700"
+          className="fixed bottom-6 right-6 bg-gradient-to-tr from-blue-500 to-indigo-500 hover:from-blue-600 hover:to-indigo-600 transition duration-300 shadow-xl p-3 rounded-full h-14 w-14 flex justify-center items-center cursor-pointer ring-2 ring-white hover:scale-105"
           onClick={() => setOpenChatBot(true)}
         >
-          <RiCustomerService2Fill className="text-blue-700" size={50} />
+          <RiCustomerService2Fill className="text-white" size={32} />
         </div>
       )}
     </>
