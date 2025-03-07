@@ -203,6 +203,7 @@ export const removeAccount = async (req, res) => {
     // ID of the admin performing the deletion (assumed to be set in req.id)
     const adminId = req.id;
     const { userId } = req.params;
+    console.log(adminId, userId);
 
     if (!userId) {
       return res
